@@ -41,7 +41,7 @@ btn.addEventListener('click', function () {
     		span.className = 'closeBtn';
     	}
 
-  		})
+  	})
 	}
 });
 
@@ -52,8 +52,8 @@ byCheck.addEventListener('click', function (e) {
 }, false)
 
 del.addEventListener ('click', function () {
-		for (let i = 0; i < li.length; i++) {
-     	let div = li[i];
-      div.style.display = 'none';
+	for (let i = 0; i < li.length; i++) {
+     		let div = li[i];
+      		div.style.display = 'none';
     }   
 })
