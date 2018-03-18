@@ -1,0 +1,144 @@
+
+body { 
+    background-color: white;
+    font: 16px/1.42857 "Trebuchet MS",sans-serif;
+    margin:0;
+    overflow: scroll;
+}
+
+header {
+    background-color: #00677E;
+    color: #fff;
+    height: 50px;
+    padding: 10px 50px;
+}
+
+main {
+    margin: auto;
+    width: 650px;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 
+-webkit-box-shadow: -2px 21px 86px -14px rgba(0,0,0,1);
+-moz-box-shadow: -2px 21px 86px -14px rgba(0,0,0,1);
+box-shadow: -2px 21px 86px -14px rgba(0,0,0,1);
+   /*-15px -15px 2px -5px rgba(160,82,45,.5),
+   -15px 15px 2px -5px rgba(0,255,255,.5),
+   15px -15px 2px -5px rgba(255,0,0,.5),
+   15px 15px 2px -5px rgba(255,255,0,.5);*/
+}
+
+#myInput {
+	border: none;
+	margin-left: none;
+	margin-bottom: 25px;
+	padding: 1px;
+	width: 500px;
+	height: 47px;
+	outline: none;
+	font-size: 18px;
+}
+
+#myBtn {
+	float: right;
+	margin-left: none;
+	position: absolute;
+	border: none;
+	height: 47px;
+	line-height: 47px;
+	width: 150px;
+	background-color: #E7FEE6;
+	cursor: pointer;	
+	transition: 0.2s;
+	font-size: 18px;
+	text-align: center;
+}
+
+#myBtn:hover {
+	background-color: #BFFB97;
+}
+
+h2 {
+	margin-left: 25px;
+	text-align: center;
+	color: #F5FFFA;
+	font-style: oblique;
+	
+}
+
+#myULList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header {
+	background-color: #3D3C3C;
+	margin: auto;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 14px 42px;
+    background: #FFFFFF;
+    border: 3px solid #3D3C3C;
+    border-top: none;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li:hover {
+	background: #ddd;
+}
+.closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px 10px 14px 12px;
+}
+
+.closeBtn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.closeBtn:before {
+    content: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4Ni40IDQ4Ni40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODYuNCA0ODYuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00NDYsNzBIMzQ0LjhWNTMuNWMwLTI5LjUtMjQtNTMuNS01My41LTUzLjVoLTk2LjJjLTI5LjUsMC01My41LDI0LTUzLjUsNTMuNVY3MEg0MC40Yy03LjUsMC0xMy41LDYtMTMuNSwxMy41ICAgIFMzMi45LDk3LDQwLjQsOTdoMjQuNHYzMTcuMmMwLDM5LjgsMzIuNCw3Mi4yLDcyLjIsNzIuMmgyMTIuNGMzOS44LDAsNzIuMi0zMi40LDcyLjItNzIuMlY5N0g0NDZjNy41LDAsMTMuNS02LDEzLjUtMTMuNSAgICBTNDUzLjUsNzAsNDQ2LDcweiBNMTY4LjYsNTMuNWMwLTE0LjYsMTEuOS0yNi41LDI2LjUtMjYuNWg5Ni4yYzE0LjYsMCwyNi41LDExLjksMjYuNSwyNi41VjcwSDE2OC42VjUzLjV6IE0zOTQuNiw0MTQuMiAgICBjMCwyNC45LTIwLjMsNDUuMi00NS4yLDQ1LjJIMTM3Yy0yNC45LDAtNDUuMi0yMC4zLTQ1LjItNDUuMlY5N2gzMDIuOXYzMTcuMkgzOTQuNnoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMjQzLjIsNDExYzcuNSwwLDEzLjUtNiwxMy41LTEzLjVWMTU4LjljMC03LjUtNi0xMy41LTEzLjUtMTMuNXMtMTMuNSw2LTEzLjUsMTMuNXYyMzguNSAgICBDMjI5LjcsNDA0LjksMjM1LjcsNDExLDI0My4yLDQxMXoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMTU1LjEsMzk2LjFjNy41LDAsMTMuNS02LDEzLjUtMTMuNVYxNzMuN2MwLTcuNS02LTEzLjUtMTMuNS0xMy41cy0xMy41LDYtMTMuNSwxMy41djIwOC45ICAgIEMxNDEuNiwzOTAuMSwxNDcuNywzOTYuMSwxNTUuMSwzOTYuMXoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMzMxLjMsMzk2LjFjNy41LDAsMTMuNS02LDEzLjUtMTMuNVYxNzMuN2MwLTcuNS02LTEzLjUtMTMuNS0xMy41cy0xMy41LDYtMTMuNSwxMy41djIwOC45ICAgIEMzMTcuOCwzOTAuMSwzMjMuOCwzOTYuMSwzMzEuMywzOTYuMXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K");
+}
+
+#del {
+    position: absolute;
+    padding: 17px 16px 12px 16px;
+    border: none;
+    color: #F5FFFA;
+    font-style: oblique;
+}
+
+/*#del:before {
+    content: "\21bb"
+}*/
+
+.checked {
+    background: #B8FEB8;
+    color: black;
+    text-decoration: line-through;
+}
+
+.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #52CB52;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
