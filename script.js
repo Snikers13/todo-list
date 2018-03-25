@@ -11,7 +11,7 @@ btn.addEventListener('click', function () {
 	let newLi = document.createElement('li');
   newLi.textContent = inp.value;
   	if (inp.value === '') {
-        var err = setInterval(function () { 
+        let err = setInterval(function () { 
         inp.placeholder = 'You must write something';
         inp.style.backgroundColor = '#FEEBE6';
           if (inp.value !== '') {
@@ -20,7 +20,7 @@ btn.addEventListener('click', function () {
               inp.style.backgroundColor = 'white';
           }
         }, 0)
-  	} else  {
+  	} else {
     	ul.appendChild (newLi);
     }
     inp.value = '';
